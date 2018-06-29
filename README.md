@@ -1,2 +1,1 @@
-# L-Ro3b
-# This is L-Ro3b Community Bot
+# خش كلمون اي حد عاو ز اي خش خلخون
