@@ -9,7 +9,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log(`---------------------------------------`);
 });
-Hattan.on('message', message => {
+client.on('message', message => {
     if (message.content.startsWith("&رابط")) {
 
         message.channel.createInvite({
