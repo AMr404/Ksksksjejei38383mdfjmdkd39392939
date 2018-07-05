@@ -9,6 +9,28 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log(`---------------------------------------`);
 });
+Hattan.on('message', message => {
+    if (message.content.startsWith("&رابط")) {
+
+        message.channel.createInvite({
+        thing: true,
+        maxUses: 2,
+        maxAge: 86400
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+    const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setDescription("تم ارسالك في الخاص")
+   .setFooter("Hattan",'https://c.top4top.net/p_692szxc01.jpg')
+      message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+              const Embed11 = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setDescription("هذا الرابط لمستخدم واحد")
+        .setFooter("Hattan",'https://c.top4top.net/p_692szxc01.jpg')
+      message.author.sendEmbed(Embed11)
+    }
+});
 const authors = [];
 var warned = [];
 var banned = [];
